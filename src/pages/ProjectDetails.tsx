@@ -8,6 +8,8 @@ import Lightbox from "@/components/Lightbox";
 import VideoPlayer from "@/components/VideoPlayer";
 import VideoLightbox from "@/components/VideoLightbox";
 import VideoThumbnail from "@/components/VideoThumbnail";
+import LikeButton from "@/components/LikeButton";
+
 
 const ProjectDetails = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
