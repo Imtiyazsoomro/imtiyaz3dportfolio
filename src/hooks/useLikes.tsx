@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { createLikesClient } from "@/integrations/supabase/likesClient";
 
 const VISITOR_KEY = "visitor_id";
 
@@ -30,6 +31,7 @@ export const LikesProvider = ({ children }: { children: ReactNode }) => {
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [liked, setLiked] = useState<Record<string, boolean>>({});
   const visitorId = useMemo(() => getVisitorId(), []);
+  const likesClient = useMemo(() => createLikesClient(visitorId), [visitorId]);
 
   const load = useCallback(async () => {
     const { data, error } = await supabase
@@ -82,12 +84,12 @@ export const LikesProvider = ({ children }: { children: ReactNode }) => {
       }));
 
       const { error } = isLiked
-        ? await supabase
+        ? await likesClient
             .from("project_likes")
             .delete()
             .eq("project_id", projectId)
             .eq("visitor_id", visitorId)
-        : await supabase
+        : await likesClient
             .from("project_likes")
             .insert({ project_id: projectId, visitor_id: visitorId });
 
@@ -96,7 +98,7 @@ export const LikesProvider = ({ children }: { children: ReactNode }) => {
         load();
       }
     },
-    [liked, visitorId, load]
+    [liked, visitorId, load, likesClient]
   );
 
   return (
