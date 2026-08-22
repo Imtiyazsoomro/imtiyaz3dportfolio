@@ -36,26 +36,38 @@ const AppRoutes = () => {
   );
 };
 
+const Layout = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  return (
+    <div className="flex flex-col min-h-screen">
+      {!isHome && <Navbar />}
+      <div className="flex-1">
+        <AppRoutes />
+      </div>
+      {!isHome && <Footer />}
+    </div>
+  );
+};
+
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <ThemeProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <div className="flex flex-col min-h-screen">
-              <Navbar />
-              <div className="flex-1">
-                <AppRoutes />
-              </div>
-              <Footer />
-            </div>
-          </BrowserRouter>
+          <LikesProvider>
+            <Toaster />
+            <Sonner />
+            <BrowserRouter>
+              <Layout />
+            </BrowserRouter>
+          </LikesProvider>
         </ThemeProvider>
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>
 );
+
 
 export default App;
