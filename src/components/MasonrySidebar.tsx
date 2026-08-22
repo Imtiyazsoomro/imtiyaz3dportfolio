@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon, Linkedin, Mail, ExternalLink } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
-import logoAsset from "@/assets/imtiyaz-logo.png.asset.json";
 
 
 const navLinks = [
@@ -25,9 +24,11 @@ const SidebarContent = () => {
   return (
     <div className="flex h-full flex-col justify-between py-10 px-8">
       <div>
-        <Link to="/" className="inline-block">
-          <img src={logoAsset.url} alt="Imtiyaz Soomro logo" className="h-8 w-auto" />
+        <Link to="/" className="font-display font-bold text-2xl">
+          <span className="text-foreground">IS</span>
+          <span className="text-primary">.</span>
         </Link>
+
 
 
         <nav className="mt-16 flex flex-col gap-6">
@@ -80,9 +81,11 @@ const MasonrySidebar = () => {
 
       {/* Mobile top bar */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 h-16 bg-background/90 backdrop-blur-lg border-b border-border">
-        <Link to="/" className="inline-block">
-          <img src={logoAsset.url} alt="Imtiyaz Soomro logo" className="h-7 w-auto" />
+        <Link to="/" className="font-display font-bold text-xl">
+          <span className="text-foreground">Imtiyaz</span>
+          <span className="text-primary">.</span>
         </Link>
+
 
         <button onClick={() => setIsOpen(true)} aria-label="Open menu" className="text-foreground">
           <Menu className="w-6 h-6" />
