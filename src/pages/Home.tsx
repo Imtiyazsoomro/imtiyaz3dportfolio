@@ -27,8 +27,9 @@ const Home = () => {
           >
             <div>
               <h1 className="font-display font-bold text-3xl md:text-5xl text-foreground tracking-tight">
-                Imtiyaz <span className="text-gradient">Soomro</span>
+                Imtiyaz Soomro
               </h1>
+
               <p className="text-muted-foreground mt-2 text-sm md:text-base uppercase tracking-[0.2em]">
                 3D Artist &amp; Creative Designer
               </p>
