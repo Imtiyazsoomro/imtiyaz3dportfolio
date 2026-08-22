@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Home"
+        title="3D Artist & Creative Designer"
         description="Portfolio of Imtiyaz Soomro — 3D Artist, Brand Identity Designer & Creative Professional. Explore vehicle designs, architecture, brand identity, and AI-enhanced media."
         path="/"
       />

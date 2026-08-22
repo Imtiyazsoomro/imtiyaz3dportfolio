@@ -9,6 +9,7 @@ import VideoPlayer from "@/components/VideoPlayer";
 import VideoLightbox from "@/components/VideoLightbox";
 import VideoThumbnail from "@/components/VideoThumbnail";
 import LikeButton from "@/components/LikeButton";
+import SEOHead from "@/components/SEOHead";
 
 
 const ProjectDetails = () => {
@@ -36,6 +37,11 @@ const ProjectDetails = () => {
 
   return (
     <main className="pt-24 pb-20">
+      <SEOHead
+        title={`${project.title} — ${project.category}`}
+        description={project.description.slice(0, 155)}
+        path={`/project/${project.id}`}
+      />
       <div className="container px-6">
         {/* Back Button */}
         <motion.div

@@ -162,9 +162,9 @@ const Contact = () => {
             className="space-y-8"
           >
             <div className="bg-card rounded-2xl border border-border p-8">
-              <h3 className="font-display font-semibold text-xl text-foreground mb-6">
+              <h2 className="font-display font-semibold text-xl text-foreground mb-6">
                 Connect With Me
-              </h3>
+              </h2>
 
               <div className="space-y-4">
                 <a
@@ -213,9 +213,9 @@ const Contact = () => {
             </div>
 
             <div className="bg-primary/10 rounded-2xl p-8 text-center">
-              <h4 className="font-display font-semibold text-foreground mb-2">
+              <h2 className="font-display font-semibold text-foreground mb-2">
                 Open for Opportunities
-              </h4>
+              </h2>
               <p className="text-muted-foreground text-sm">
                 I'm currently accepting new projects and collaborations. Let's create something amazing together!
               </p>
