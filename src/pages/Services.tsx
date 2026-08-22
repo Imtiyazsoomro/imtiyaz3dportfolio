@@ -70,6 +70,7 @@ const Services = () => {
         </motion.div>
 
         {/* Services Grid */}
+        <h2 className="sr-only">Creative services I offer</h2>
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <motion.div

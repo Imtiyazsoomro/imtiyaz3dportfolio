@@ -39,6 +39,7 @@ const Footer = () => {
             <div className="flex gap-4">
               <a
                 href="https://www.linkedin.com/in/imtiyazsoomro/"
+                aria-label="Imtiyaz Soomro on LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
@@ -47,6 +48,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.artstation.com/imtiyazsoomro"
+                aria-label="Imtiyaz Soomro on ArtStation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
@@ -55,6 +57,7 @@ const Footer = () => {
               </a>
               <a
                 href="mailto:iimtiiyazhussainsoomro11@gmail.com"
+                aria-label="Email Imtiyaz Soomro"
                 className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
               >
                 <Mail className="w-5 h-5" />

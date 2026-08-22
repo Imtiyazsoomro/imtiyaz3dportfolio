@@ -7,7 +7,7 @@ interface SEOHeadProps {
 }
 
 const SEOHead = ({ title, description, path = "" }: SEOHeadProps) => {
-  const baseUrl = "https://imtiyaz.lovable.app";
+  const baseUrl = "https://imtiyaz3dportfolio.lovable.app";
   const fullUrl = `${baseUrl}${path}`;
   const fullTitle = `${title} | Imtiyaz Soomro`;
 

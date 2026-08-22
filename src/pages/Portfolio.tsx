@@ -4,6 +4,7 @@ import { projects, type ProjectCategory } from "@/data/projects";
 import { brandProjects } from "@/data/brandProjects";
 import ProjectCard from "@/components/ProjectCard";
 import BrandShowcase from "@/components/BrandShowcase";
+import SEOHead from "@/components/SEOHead";
 
 const categories: (ProjectCategory | "All")[] = ["All", "Game Assets • Architecture", "Hard Surface • Concepts", "Brand Identity", "AI-Enhanced Digital Media"];
 
@@ -20,6 +21,11 @@ const Portfolio = () => {
 
   return (
     <main className="pt-24 pb-20">
+      <SEOHead
+        title="Portfolio — 3D, Brand Identity & AI Media Projects"
+        description="Browse Imtiyaz Soomro's portfolio: game assets, architecture visualization, hard-surface vehicle concepts, brand identity systems and AI-enhanced digital media."
+        path="/portfolio"
+      />
       <div className="container px-6">
         {/* Header */}
         <motion.div
