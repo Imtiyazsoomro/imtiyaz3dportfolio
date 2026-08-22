@@ -1,8 +1,14 @@
 // Runs before `vite dev` and `vite build` (predev/prebuild hooks); writes public/sitemap.xml.
 
 import { writeFileSync } from "fs"
+import { readFileSync } from "fs"
 import { resolve } from "path"
-import { projects } from "../src/data/projects"
+
+// Project ids are read from the data file as text: importing the module would
+// pull in image assets that Node cannot resolve outside Vite.
+const projectIds = Array.from(
+  readFileSync(resolve("src/data/projects.ts"), "utf8").matchAll(/^\s{4}id: "([^"]+)",/gm),
+).map((m) => m[1])
 
 const BASE_URL = "https://imtiyaz3dportfolio.lovable.app"
 
@@ -18,8 +24,8 @@ const entries: SitemapEntry[] = [
   { path: "/services", changefreq: "monthly", priority: "0.7" },
   { path: "/about", changefreq: "monthly", priority: "0.7" },
   { path: "/contact", changefreq: "yearly", priority: "0.6" },
-  ...projects.map((project) => ({
-    path: `/project/${project.id}`,
+  ...projectIds.map((id) => ({
+    path: `/project/${id}`,
     changefreq: "monthly" as const,
     priority: "0.8",
   })),
