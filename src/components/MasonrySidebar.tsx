@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon, Linkedin, Mail, ExternalLink } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
+import logoAsset from "@/assets/imtiyaz-logo.png.asset.json";
+
 
 const navLinks = [
   { href: "/portfolio", label: "Work" },
@@ -23,10 +25,10 @@ const SidebarContent = () => {
   return (
     <div className="flex h-full flex-col justify-between py-10 px-8">
       <div>
-        <Link to="/" className="font-display font-bold text-2xl">
-          <span className="text-foreground">IS</span>
-          <span className="text-primary">.</span>
+        <Link to="/" className="inline-block">
+          <img src={logoAsset.url} alt="Imtiyaz Soomro logo" className="h-8 w-auto" />
         </Link>
+
 
         <nav className="mt-16 flex flex-col gap-6">
           {navLinks.map((link) => (
