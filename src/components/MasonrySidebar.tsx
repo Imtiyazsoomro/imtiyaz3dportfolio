@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon, Linkedin, Mail, ExternalLink } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
-import logoAsset from "@/assets/imtiyaz-logo.png.asset.json";
 
 
 const navLinks = [
