@@ -15,6 +15,8 @@ import Services from "@/pages/Services";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
+import { LikesProvider } from "@/hooks/useLikes";
+
 
 const queryClient = new QueryClient();
 
