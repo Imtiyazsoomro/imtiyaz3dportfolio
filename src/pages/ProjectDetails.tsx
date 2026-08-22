@@ -73,9 +73,13 @@ const ProjectDetails = () => {
             <span className="text-primary font-medium text-sm uppercase tracking-wider">
               {project.category}
             </span>
-            <h1 className="font-display font-bold text-3xl md:text-4xl text-foreground mt-2 mb-6">
-              {project.title}
-            </h1>
+            <div className="flex flex-wrap items-center gap-4 mt-2 mb-6">
+              <h1 className="font-display font-bold text-3xl md:text-4xl text-foreground">
+                {project.title}
+              </h1>
+              <LikeButton projectId={project.id} size="md" />
+            </div>
+
             <p className="text-muted-foreground text-lg leading-relaxed">
               {project.description}
             </p>
