@@ -1,6 +1,6 @@
 # Imtiyaz Soomro | 3D Artist & Graphic Designer Portfolio
 
-Live Application: [Add your Vercel/Netlify URL here]
+Live Application: (https://imtiyaz3d.netlify.app/portfolio)
 
 ## Overview
 A high-performance, dark-mode portfolio showcasing a multidisciplinary blend of spatial 3D design, interactive systems, and technical execution. As a Computer Science graduate, I bridge the gap between creative 3D modeling (Maya, Blender) and logical, data-driven architecture. 
@@ -24,7 +24,5 @@ This repository houses the frontend source code for the portfolio, featuring int
 * **Frontend Framework:** React, Vite, TypeScript
 * **Styling:** Tailwind CSS
 * **Deployment:**Netlify
-
-## Links
 * **LinkedIn:** https://www.linkedin.com/in/imtiyazsoomro/
 * **ArtStation:** https://www.artstation.com/imtiyazsoomro
