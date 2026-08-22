@@ -80,10 +80,10 @@ const MasonrySidebar = () => {
 
       {/* Mobile top bar */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 h-16 bg-background/90 backdrop-blur-lg border-b border-border">
-        <Link to="/" className="font-display font-bold text-xl">
-          <span className="text-foreground">Imtiyaz</span>
-          <span className="text-primary">.</span>
+        <Link to="/" className="inline-block">
+          <img src={logoAsset.url} alt="Imtiyaz Soomro logo" className="h-7 w-auto" />
         </Link>
+
         <button onClick={() => setIsOpen(true)} aria-label="Open menu" className="text-foreground">
           <Menu className="w-6 h-6" />
         </button>
