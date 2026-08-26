@@ -20,9 +20,20 @@ This repository houses the frontend source code for the portfolio, featuring int
 * Isometric Illustration
 * Social Media Graphics & Branding
 
-## Tech Stack
-* **Frontend Framework:** React, Vite, TypeScript
-* **Styling:** Tailwind CSS
-* **Deployment:**Netlify
+
+* ## Tools Used (System Setup)
+* **Lovable (AI Builder):** Used for rapid frontend React component generation and UI scaffolding using natural language prompts.
+* **GitHub:** Version control and repository hosting.
+* **Netlify:** Continuous deployment and live hosting.
 * **LinkedIn:** https://www.linkedin.com/in/imtiyazsoomro/
 * **ArtStation:** https://www.artstation.com/imtiyazsoomro
+
+## How it was built
+1. **Prompt Logic & Wireframing:** Initial wireframing and copy were drafted using Claude to define the layout, identity kit, and project descriptions.
+2. **AI Co-Pilot Generation:** The frontend React code was generated and iterated upon using Lovable. I treated the AI as a frontend co-pilot to bypass manual HTML/CSS styling, giving it strict negative constraints to avoid generic stock assets.
+3. **Version Control:** The codebase was committed directly to this GitHub repository.
+4. **Deployment Pipeline:** The repository was connected to Netlify for continuous integration. Any future updates pushed to the `main` branch automatically redeploy the live site.
+
+## Known Limitations
+* **AI Builder Edge Cases:** Highly specific custom padding or complex responsive breakpoints sometimes required manual human-in-the-loop intervention. The AI builder would occasionally break existing layouts when attempting localized mobile-view fixes.
+* **3D Asset Rendering Performance:** Because the site hosts actual high-resolution spatial renders instead of AI-generated stand-ins, browsers on low-power mobile devices may experience slight performance drops. Desktop viewing is prioritized for maximum fidelity.
