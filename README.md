@@ -1,6 +1,6 @@
 # Imtiyaz Soomro | 3D Artist & Graphic Designer Portfolio
 
-Live Application: (https://imtiyaz3d.netlify.app/portfolio)
+Live Application: https://imtiyaz3d.netlify.app/portfolio
 
 ## Overview
 A high-performance, dark-mode portfolio showcasing a multidisciplinary blend of spatial 3D design, interactive systems, and technical execution. As a Computer Science graduate, I bridge the gap between creative 3D modeling (Maya, Blender) and logical, data-driven architecture. 
@@ -14,25 +14,25 @@ This repository houses the frontend source code for the portfolio, featuring int
 * **Joarney (AR Navigation):** Augmented Reality based navigation system utilizing ARCore, Unity, and MapBox.
 
 ## Services & Skills
-* 3D Asset Creation
-* Spatial Environment Design
-* Hard-surface Modeling
-* Isometric Illustration
-* Social Media Graphics & Branding
+* 3D Asset Creation | Spatial Environment Design | Hard-surface Modeling | Isometric Illustration | Social Media Graphics & Branding
 
-
-* ## Tools Used (System Setup)
+## Tools Used (Architecture & Stack)
 * **Lovable (AI Builder):** Used for rapid frontend React component generation and UI scaffolding using natural language prompts.
 * **GitHub:** Version control and repository hosting.
 * **Netlify:** Continuous deployment and live hosting.
-* **LinkedIn:** https://www.linkedin.com/in/imtiyazsoomro/
-* **ArtStation:** https://www.artstation.com/imtiyazsoomro
+
+## Setup & Reproduction Steps
+To clone and run this portfolio environment locally:
+1. Clone the repository: `git clone https://github.com/Imtiyazsoomro/imtiyaz3dportfolio.git`
+2. Navigate to the project directory: `cd imtiyaz3dportfolio`
+3. Install dependencies: `npm install`
+4. Run the local development server: `npm run dev`
+5. To deploy your own version, connect your forked GitHub repository to Netlify for automated CI/CD builds.
 
 ## How it was built
 1. **Prompt Logic & Wireframing:** Initial wireframing and copy were drafted using Claude to define the layout, identity kit, and project descriptions.
 2. **AI Co-Pilot Generation:** The frontend React code was generated and iterated upon using Lovable. I treated the AI as a frontend co-pilot to bypass manual HTML/CSS styling, giving it strict negative constraints to avoid generic stock assets.
-3. **Version Control:** The codebase was committed directly to this GitHub repository.
-4. **Deployment Pipeline:** The repository was connected to Netlify for continuous integration. Any future updates pushed to the `main` branch automatically redeploy the live site.
+3. **Deployment Pipeline:** The repository was connected to Netlify for continuous integration. Any future updates pushed to the `main` branch automatically redeploy the live site.
 
 ## Known Limitations
 * **AI Builder Edge Cases:** Highly specific custom padding or complex responsive breakpoints sometimes required manual human-in-the-loop intervention. The AI builder would occasionally break existing layouts when attempting localized mobile-view fixes.
