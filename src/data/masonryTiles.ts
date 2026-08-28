@@ -22,7 +22,9 @@ const spanPattern: TileSpan[] = [
  * then assigns a size from the span pattern.
  */
 export const buildMasonryTiles = (limit = 24): Tile[] => {
-  const pools = projects.map((project) => ({
+  // Only show 3D-related projects on the home grid.
+  const threeDProjects = projects.filter((p) => p.category !== "AI-Enhanced Digital Media" && p.category !== "Brand Identity");
+  const pools = threeDProjects.map((project) => ({
     project,
     images: project.gallery.length ? project.gallery : [project.coverImage],
   }));
